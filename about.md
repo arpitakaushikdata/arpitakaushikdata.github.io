@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a graduate student pursuing  Masters in Illinois Institute of Technology, A Data enthusiast looking for new oppurtunities as Data Analyst
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[arpita.k20@gmail.com](mailto:arpita.k20@gmail.com)
