@@ -2,6 +2,12 @@
 published: false
 ---
 
+---
+layout: post
+title: Prudential Insurance Kaggle
+---
+
+
 ### Business Scenario
 
 
@@ -127,5 +133,3 @@ List of table specifying which all continues variable to be included in the mode
 - The response variable denotes the level of risk associated with the Life insurance of a particular individual. Most frequent value for Response is ‘8’ in the test data. Therefore the most occurring risk is level 8 for the output data set.
 - Multinomial Regression model is effective to perform predictive modeling when the response variable is multi-level cat
 egorical.
-
-
