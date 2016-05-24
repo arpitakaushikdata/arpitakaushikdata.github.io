@@ -37,7 +37,7 @@ The ‘Response’ field in the dataset is the dependant variable. ‘Response�
 
 Following is the list of possible predictor variable
 
-![Screen Shot 2016-05-23 at 7.49.36 PM.png](Screen Shot 2016-05-23 at 7.49.36 PM.png)
+![Screen Shot 2016-05-23 at 7.49.36 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 7.49.36 PM.png)
 
 ### R Libraries
 
@@ -64,7 +64,7 @@ There are two dataset present in this problem statement – Train & Test. Follow
  
 a) Missing Values: 4 variables found to have missing values. The missing values are replaced with the ‘mean value’ of that column. The mean for the rows having not null value is calculated and updated where the value is missing.
 
-![Screen Shot 2016-05-23 at 7.57.22 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 7.57.22 PM.png)
+![Screen Shot 2016-05-23 at 7.57.22 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 7.57.22 PM.png)
 
 #### Association – Categorical Variables 1
 
