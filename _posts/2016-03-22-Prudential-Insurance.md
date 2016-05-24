@@ -94,3 +94,38 @@ Correlation – Categorical Variables:
 ![Screen Shot 2016-05-23 at 8.04.38 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.04.38 PM.png)
 
 
+#### Correlation - Continous Variable 3
+List of table specifying which all continues variable to be included in the model
+![Screen Shot 2016-05-23 at 8.07.59 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.07.59 PM.png)
+
+### Regression Modelling Results
+#### Building the model
+- For this analysis, Multinomial Regression model is used. Multinomial Regression Model, is used to build a regression model where the response variable has more than two category. It is a generalization of the Logistic regression model.
+- After exploring the data by identifying the best predictor variable and finding out the appropriate regression modeling technique. Next step is to build the model.
+- The ‘multinom()’ function is used to build a regression model in R
+
+#### Analyzing the model
+- Following is the part of output for the summary of model
+- The below screen shot denotes the Intercepts and coefficients for some of the variables in the model
+![Screen Shot 2016-05-23 at 8.11.16 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.11.16 PM.png)
+- The highest coefficient for BMI is for Response variable level – 8
+
+#### Predicting values
+- After the model is fitted, probability is calculated for each response type. The function ‘predict()’ is used to calculate the probability using the model on Test database
+- A part of the output of the ‘predict()’ is a matrix, as displayed below
+![Screen Shot 2016-05-23 at 8.12.18 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.12.18 PM.png)
+
+### Conclusion
+- The ‘Response’ variable for Test data set was predicted successfully using the following 45 predictors variables(43 Categorical & 2 Continues):
+  - BMI
+  - Employment Info6
+  - Product Info3
+  - Insured Info2,5,7
+  - Medical History 4,5,6,16,17,20,23,29,30,31,33,38,39,40
+  - Medical Keyword 1,3,4,9, 10,13,14,15,16,19,22,23,24,2527,31,33,35,36,38,43,46,48
+- Note: ‘Insurance_Info2,5,7’ denotes 3 variables – Insurance_Info2, Insurance_Info5, Insurance_Info7. Same is the case for other variables. As the total number of variables is huge, they are denoted in such a way
+- The response variable denotes the level of risk associated with the Life insurance of a particular individual. Most frequent value for Response is ‘8’ in the test data. Therefore the most occurring risk is level 8 for the output data set.
+- Multinomial Regression model is effective to perform predictive modeling when the response variable is multi-level cat
+egorical.
+
+
