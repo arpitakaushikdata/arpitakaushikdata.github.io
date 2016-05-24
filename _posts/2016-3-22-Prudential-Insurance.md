@@ -1,7 +1,4 @@
 ---
-published: true
----
----
 layout: post
 title: Prudential Insurance Kaggle
 published: true
