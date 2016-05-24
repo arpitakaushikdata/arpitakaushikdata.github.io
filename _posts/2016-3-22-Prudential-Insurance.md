@@ -30,7 +30,7 @@ The results will help Prudential better understand the predictive power of the d
 
 The ‘Response’ field in the dataset is the dependant variable. ‘Response’ variable denotes the level of risk associated with a person’s chances of claiming his/her life insurance, in order to get a life Insurance Quote. This helps the Insurance company in assessing the application and denoting the right quote for the applicant. The several levels for ‘Response’ variable are: 1,2,3,4,5,6,7,8, where 8 means the highest level of risk. For example, if insurance risk level is calculated as 8 for an individual, he/she has maximum chances of claiming insurance from the company, Therefore a level of 8 is bad for the insurance company
 
-![prudential_1.png]({{ site.baseurl }}/_posts/prudential_1.png)
+![prudential_1.png] ({{ site.baseurl }}_posts/prudential_1.png)
 
 
 #### Predictor Variable (X): 
