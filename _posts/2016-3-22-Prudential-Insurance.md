@@ -30,13 +30,14 @@ The results will help Prudential better understand the predictive power of the d
 
 The ‘Response’ field in the dataset is the dependant variable. ‘Response’ variable denotes the level of risk associated with a person’s chances of claiming his/her life insurance, in order to get a life Insurance Quote. This helps the Insurance company in assessing the application and denoting the right quote for the applicant. The several levels for ‘Response’ variable are: 1,2,3,4,5,6,7,8, where 8 means the highest level of risk. For example, if insurance risk level is calculated as 8 for an individual, he/she has maximum chances of claiming insurance from the company, Therefore a level of 8 is bad for the insurance company
 
-![prudential_1.png]({{site.baseurl}}/_posts/prudential_1.png)
+![prudential_1.png]({{ site.baseurl }}/_posts/prudential_1.png)
+
 
 #### Predictor Variable (X): 
 
 Following is the list of possible predictor variable
 
-![Screen Shot 2016-05-23 at 7.49.36 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 7.49.36 PM.png)
+![Screen Shot 2016-05-23 at 7.49.36 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 7.49.36 PM.png)
 
 ### R Libraries
 
@@ -63,7 +64,7 @@ There are two dataset present in this problem statement – Train & Test. Follow
  
 a) Missing Values: 4 variables found to have missing values. The missing values are replaced with the ‘mean value’ of that column. The mean for the rows having not null value is calculated and updated where the value is missing.
 
-![Screen Shot 2016-05-23 at 7.57.22 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 7.57.22 PM.png)
+![Screen Shot 2016-05-23 at 7.57.22 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 7.57.22 PM.png)
 
 #### Association – Categorical Variables 1
 
@@ -73,10 +74,10 @@ a) Missing Values: 4 variables found to have missing values. The missing values 
 
 #### Association – Categorical Variables 2
 Out of 115 categorical variables, only 43 qualified the Chi-square test and have P-value less than 0.05. Following is the table which represent the P-value for each variable
-![Screen Shot 2016-05-23 at 8.00.16 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.00.16 PM.png)
+![Screen Shot 2016-05-23 at 8.00.16 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 8.00.16 PM.png)
 
 #### Association – Categorical Variables 3
-![Screen Shot 2016-05-23 at 8.00.58 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.00.58 PM.png)
+![Screen Shot 2016-05-23 at 8.00.58 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 8.00.58 PM.png)
 
 #### Correlation - Continous Variable 1
 Correlation – Categorical Variables:
@@ -93,12 +94,12 @@ Correlation – Categorical Variables:
 - The trend between the Response and Employment Info is denoted by the red line.
 - As Employment Info has varied valued for each response category, it can be included in model
 
-![Screen Shot 2016-05-23 at 8.04.38 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.04.38 PM.png)
+![Screen Shot 2016-05-23 at 8.04.38 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 8.04.38 PM.png)
 
 
 #### Correlation - Continous Variable 3
 List of table specifying which all continues variable to be included in the model
-![Screen Shot 2016-05-23 at 8.07.59 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.07.59 PM.png)
+![Screen Shot 2016-05-23 at 8.07.59 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 8.07.59 PM.png)
 
 ### Regression Modelling Results
 #### Building the model
@@ -109,13 +110,13 @@ List of table specifying which all continues variable to be included in the mode
 #### Analyzing the model
 - Following is the part of output for the summary of model
 - The below screen shot denotes the Intercepts and coefficients for some of the variables in the model
-![Screen Shot 2016-05-23 at 8.11.16 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.11.16 PM.png)
+![Screen Shot 2016-05-23 at 8.11.16 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 8.11.16 PM.png)
 - The highest coefficient for BMI is for Response variable level – 8
 
 #### Predicting values
 - After the model is fitted, probability is calculated for each response type. The function ‘predict()’ is used to calculate the probability using the model on Test database
 - A part of the output of the ‘predict()’ is a matrix, as displayed below
-![Screen Shot 2016-05-23 at 8.12.18 PM.png]({{site.baseurl}}/_posts/Screen Shot 2016-05-23 at 8.12.18 PM.png)
+![Screen Shot 2016-05-23 at 8.12.18 PM.png]({{ site.baseurl }}/_posts/Screen Shot 2016-05-23 at 8.12.18 PM.png)
 
 ### Conclusion
 - The ‘Response’ variable for Test data set was predicted successfully using the following 45 predictors variables(43 Categorical & 2 Continues):
