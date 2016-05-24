@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-I am a graduate student pursuing  Masters in Illinois Institute of Technology, A Data enthusiast looking for new oppurtunities as Data Analyst. 
+A Data enthusiast looking for new oppurtunities as Data Analyst. I am a graduate student pursuing  Masters in Illinois Institute of Technology. I have a 6 years IT Industry experience as an Information Technology Analyst with Banking, Financial and Education domain.
 
 ### More Information
 
