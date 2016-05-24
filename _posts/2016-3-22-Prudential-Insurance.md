@@ -1,9 +1,10 @@
 ---
-published: false
+published: true
 ---
 ---
 layout: post
 title: Prudential Insurance Kaggle
+published: true
 ---
 
 ### Business Scenario
