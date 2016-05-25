@@ -26,9 +26,9 @@ The results will help Prudential better understand the predictive power of the d
 
 ### Identifying Variable 
 
-#### Dependant Variable (Y): 
+#### Response Variable (Y): 
 
-The ‘Response’ field in the dataset is the dependant variable. ‘Response’ variable denotes the level of risk associated with a person’s chances of claiming his/her life insurance, in order to get a life Insurance Quote. This helps the Insurance company in assessing the application and denoting the right quote for the applicant. The several levels for ‘Response’ variable are: 1,2,3,4,5,6,7,8, where 8 means the highest level of risk. For example, if insurance risk level is calculated as 8 for an individual, he/she has maximum chances of claiming insurance from the company, Therefore a level of 8 is bad for the insurance company
+The ‘Response’ field in the dataset is the dependant variable. ‘Response’ variable denotes the level of risk associated with a person’s chances of claiming his/her life insurance, in order to get a life Insurance Quote. This helps the Insurance company in assessing the application and denoting the right quote for the applicant. The several levels for ‘Response’ variable are: 1,2,3,4,5,6,7,8, where 8 means the highest level of risk. For example, if insurance risk level is calculated as '8' for an individual, he/she has maximum chances of claiming insurance from the company, Therefore a level of 8 is bad for the insurance company
 
 ![prudential_1.png](http://arpitakaushikdata.github.io/images/prudential_1.png)
 
@@ -51,22 +51,24 @@ Following are some of the libraries which will be used in this analysis
 
 ### Exploratory Analysis
 
-#### Missing Values
-There are two dataset present in this problem statement – Train & Test. Following is the brief about both
-- Train Data set
-  1. Contains the Response variable
-  2. Used to build the Predictive m
-- "Test" Data set
-	1.Does not contain the Response variable
-    2.Need to predict Response variable for this dataset using "Train" data
-    
- In order to explore the data and develop a good regression model, 3 factors need to be understood:
- 
-a) Missing Values: 4 variables found to have missing values. The missing values are replaced with the ‘mean value’ of that column. The mean for the rows having not null value is calculated and updated where the value is missing.
+In order to explore the data and develop a good regression model, 3 factors need to be understood:
+
+1. Treating Missing Value
+2. Feature Scaling
+3. Association or Correlation between variables
+
+
+#### A) Treating Missing Values
+
+4 variables found to have missing values. The missing values are replaced with the ‘mean value’ of that column. The mean for the rows having not null value is calculated and updated where the value is missing.
 
 ![Screen Shot 2016-05-23 at 7.57.22 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 7.57.22 PM.png)
 
-#### Association – Categorical Variables 1
+#### B) Feature Scaling
+
+Feature Scaling is a process where we standardize the range of values for independant variable. In some cases the range of values for a varibale is quite scattered, this makes it difficult to understand the relation of the independant variable with the Response variable. Fortunately, all the variables provide by prudential were already standardized. Therefore, we can skip this step all together and move to the next step.
+
+#### Association or Correlation between variables – Categorical Variables 1
 
 - The relation of Response variable with the possible predictor variables. Statistical techniques such as frequency tables and Chi-square test can be used to determine if the Response variable is dependant on any of the possible predictor.
 - The list of possible predictors are listed above. Out of these 115 are Categorical Variables
