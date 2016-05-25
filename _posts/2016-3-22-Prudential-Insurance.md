@@ -103,7 +103,7 @@ List of table specifying which all continues variable to be included in the mode
 ![Screen Shot 2016-05-23 at 8.07.59 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.07.59 PM.png)
 
 ### Regression Modelling Results
-kugd
+
 #### Building the model
 - For this analysis, Multinomial Regression model is used. Multinomial Regression Model, is used to build a regression model where the response variable has more than two category. It is a generalization of the Logistic regression model.
 - After exploring the data by identifying the best predictor variable and finding out the appropriate regression modeling technique. Next step is to build the model.
