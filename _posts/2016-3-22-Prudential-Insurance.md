@@ -68,38 +68,39 @@ In order to explore the data and develop a good regression model, 3 factors need
 
 Feature Scaling is a process where we standardize the range of values for independant variable. In some cases the range of values for a varibale is quite scattered, this makes it difficult to understand the relation of the independant variable with the Response variable. Fortunately, all the variables provide by prudential were already standardized. Therefore, we can skip this step all together and move to the next step.
 
-#### Association or Correlation between variables – Categorical Variables 1
+#### C) Association or Correlation between variables
 
-- The relation of Response variable with the possible predictor variables. Statistical techniques such as frequency tables and Chi-square test can be used to determine if the Response variable is dependant on any of the possible predictor.
-- The list of possible predictors are listed above. Out of these 115 are Categorical Variables
+##### Categorical Variables 
 
+In order to determined if the Response variable(which is a Categorical variable) is dependant on any of the possible categorical predictor variable, following techniques can be used:
 
-#### Association – Categorical Variables 2
-Out of 115 categorical variables, only 43 qualified the Chi-square test and have P-value less than 0.05. Following is the table which represent the P-value for each variable
+-Frequency Tables 
+-Chi-square Test 
+
+The list of possible predictors are listed above. Out of these 115 are Categorical Variables
+
 ![Screen Shot 2016-05-23 at 8.00.16 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.00.16 PM.png)
 
-#### Association – Categorical Variables 3
+Out of 115 categorical variables, only 43 qualified the Chi-square test and have P-value less than 0.05. Following is the table which represent the P-value for each variable
+
 ![Screen Shot 2016-05-23 at 8.00.58 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.00.58 PM.png)
 
-#### Correlation - Continous Variable 1
-Correlation – Categorical Variables:
-- Out of 11 Continues variables, following 2 displayed a trend with the response variable
+##### Continous Variable 
+In order to understand the relation between continues independent variables and Response variables, we can use box plots. Out of 11 Continues variables, following 2 displayed a trend with the response variable
 - BMI
 - Employment Info 6
 - Following is the Box plot for Response variable and BMI, to understand the relation between them
 - The line highlighted in Red displays the trend between BMI & Response. 
 - As there is a trend for Response this variable can be included in the analysis
+
 ![Screen Shot 2016-05-23 at 8.03.18 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.03.18 PM.png)
 
-#### Correlation - Continous Variable 2
 - Following is the Box plot for Response variable and Employment Info 6, to understand the relation between them
 - The trend between the Response and Employment Info is denoted by the red line.
 - As Employment Info has varied valued for each response category, it can be included in model
 
 ![Screen Shot 2016-05-23 at 8.04.38 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.04.38 PM.png)
 
-
-#### Correlation - Continous Variable 3
 List of table specifying which all continues variable to be included in the model
 ![Screen Shot 2016-05-23 at 8.07.59 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.07.59 PM.png)
 
@@ -107,7 +108,7 @@ List of table specifying which all continues variable to be included in the mode
 #### Building the model
 - For this analysis, Multinomial Regression model is used. Multinomial Regression Model, is used to build a regression model where the response variable has more than two category. It is a generalization of the Logistic regression model.
 - After exploring the data by identifying the best predictor variable and finding out the appropriate regression modeling technique. Next step is to build the model.
-- The ‘multinom()’ function is used to build a regression model in R
+- The ‘_multinom()_’ function is used to build a regression model in R
 
 #### Analyzing the model
 - Following is the part of output for the summary of model
