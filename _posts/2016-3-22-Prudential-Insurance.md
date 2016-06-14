@@ -3,7 +3,7 @@ layout: post
 title: Prudential Insurance Kaggle
 published: true
 ---
-This post is regarding an analysis which I did as part of Kaggle Competition. It was a competition posted by Prudential Life Insurance company to help the organization to streamline the Insurance premium calculation process.
+This post is regarding an analysis which I performed as part of Kaggle Competition. It was a competition posted by Prudential Life Insurance company to help the organization to streamline the Insurance premium calculation process.
 
 ### Scenario
 In a one-click shopping world with on-demand everything, the life insurance application process is antiquated. Customers provide extensive information to identify risk classification and eligibility, including scheduling medical exams, a process that takes an average of 30 days.
