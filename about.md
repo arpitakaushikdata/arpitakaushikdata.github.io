@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-A Data enthusiast looking for new oppurtunities as Data Analyst. I am a graduate student pursuing  Masters in Illinois Institute of Technology. I have a 6 years IT Industry experience as an Information Technology Analyst with Banking, Financial and Education domain.
+I am a graduate student pursuing  Masters in Illinois Institute of Technology. I have a 6 years IT Industry experience as an Information Technology Analyst with Banking, Financial and Education domain.
 
 ### More Information
 
@@ -14,3 +14,4 @@ A Data enthusiast looking for new oppurtunities as Data Analyst. I am a graduate
 ### Contact me
 
 [arpita.k20@gmail.com](mailto:arpita.k20@gmail.com)
+[akaushi4@hawk.iit.edu](mailto:akaushi4@hawk.iit.edu)
