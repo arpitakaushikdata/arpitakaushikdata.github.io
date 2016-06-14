@@ -42,12 +42,12 @@ Following is the list of possible predictor variable
 ### R Libraries
 
 Following are some of the libraries which will be used in this analysis
-- library(nnet)
-  - Used to build the multinomial logistic model
-  - Uses the predictor variables to build a model which fits value for the Response variable
-- library(xlsx)
-  - To extract xls file into R
-  - Use to create the final output file in an excel sheet
+1. library(nnet)
+..*Used to build the multinomial logistic model
+..*Uses the predictor variables to build a model which fits value for the Response variable
+2. library(xlsx)
+..*To extract xls file into R
+..*Use to create the final output file in an excel sheet
 
 ### Exploratory Analysis
 
@@ -74,8 +74,8 @@ Feature Scaling is a process where we standardize the range of values for indepe
 
 In order to determined if the Response variable(which is a Categorical variable) is dependant on any of the possible categorical predictor variable, following techniques can be used:
 
--Frequency Tables 
--Chi-square Test 
+*Frequency Tables 
+*Chi-square Test 
 
 The list of possible predictors are listed above. Out of these 115 are Categorical Variables
 
@@ -87,14 +87,14 @@ Out of 115 categorical variables, only 43 qualified the Chi-square test and have
 
 ##### Continous Variable 
 In order to understand the relation between continues independent variables and Response variables, we can use box plots. Out of 11 Continues variables, following 2 displayed a trend with the response variable
--BMI
--Employment Info 6
+*BMI
+*Employment Info 6
 
 Following is the Box plot for Response variable and BMI, to understand the relation between them. The line highlighted in Red displays the trend between BMI & Response. As there is a trend for Response this variable can be included in the analysis
 
 ![Screen Shot 2016-05-23 at 8.03.18 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.03.18 PM.png)
 
--Following is the Box plot for Response variable and Employment Info 6, to understand the relation between them. The trend between the Response and Employment Info is denoted by the red line. As Employment Info has varied valued for each response category, it can be included in model.
+Following is the Box plot for Response variable and Employment Info 6, to understand the relation between them. The trend between the Response and Employment Info is denoted by the red line. As Employment Info has varied valued for each response category, it can be included in model.
 
 ![Screen Shot 2016-05-23 at 8.04.38 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.04.38 PM.png)
 
@@ -122,6 +122,8 @@ List of table specifying which all continues variable to be included in the mode
 - A part of the output of the ‘predict()’ is a matrix, as displayed below
 
 ![Screen Shot 2016-05-23 at 8.12.18 PM.png](http://arpitakaushikdata.github.io/images/Screen Shot 2016-05-23 at 8.12.18 PM.png)
+
+The above screenshot displays the output of the 'predict' function. The digits highlighted in blue are the Level of Risks(which we want to predict). The values circled with green denotes probability, of record no. 3, for each level of risk. For each record, the level for which the probability is highest is the final Level of risk. For example, record no 3 has highest probability for risk level 6, therefore record no 3 has predicted Level of risk as 6.
 
 ### Conclusion
 - The ‘Response’ variable for Test data set was predicted successfully using the following 45 predictors variables(43 Categorical & 2 Continues):
