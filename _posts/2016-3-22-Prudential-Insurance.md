@@ -135,4 +135,4 @@ The above screenshot displays the output of the 'predict' function. The digits h
   - Medical Keyword 1,3,4,9, 10,13,14,15,16,19,22,23,24,2527,31,33,35,36,38,43,46,48
 - Note: ‘Insurance_Info2,5,7’ denotes 3 variables – Insurance_Info2, Insurance_Info5, Insurance_Info7. Same is the case for other variables. As the total number of variables is huge, they are denoted in such a way
 - The response variable denotes the level of risk associated with the Life insurance of a particular individual. Most frequent value for Response is ‘8’ in the test data. Therefore the most occurring risk is level 8 for the output data set.
-- Multinomial Regression model is effective to perform predictive modeling when the response variable is multi-level categorical.
+- The predictor variable BMI has the strongest positive correlation with the 'Level of Risk', therefore we can conclude that a change in the BMI level significantly changes the 'Level of Risk' of a life insurance applicant.
